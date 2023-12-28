@@ -1,0 +1,164 @@
+.container{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+.gradient-background {
+    background: linear-gradient(300deg, #10040266, rgb(236, 147, 147), rgb(255, 255, 0));
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+  
+@keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  body{
+    margin-left: 10px;
+  }
+
+
+.part1{
+    grid-area: 1/1/1/2;    
+}
+
+.part2{
+    grid-area: 1/2/1/3;
+}
+
+.part2 p{
+    margin-left: 120px;
+    margin-top: 30px;
+    width:400px;
+    font-weight: 800;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+.profile-img{
+    height: 500px;
+    width: 350px;
+    border-radius: 5%;
+    margin: 20px;
+}
+
+.skill-img{
+    height: 150px;
+    width: 150px;
+    margin: 100px;
+    margin-bottom: 5px;
+    border-radius: 10%;
+    border: solid brown 10px;
+}
+
+.skills{
+    display: grid;
+    grid-template: 2/3;   
+}
+
+.cplusplus{
+    grid-area:1/1/2/2;}
+
+.java{
+    grid-area: 1/2/2/3;
+
+}
+
+.python{
+    grid-area: 1/3/2/4;
+}
+
+.skills_d{
+    text-align: left;
+    width:250px;
+    margin-left: 85px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+}
+
+
+.education-img{
+    height: 140px;
+    width: 140px;
+    border-radius: 50% ;
+    border: solid brown 5px;
+}
+#Skills,#Education{
+    margin-top: 20px;
+    padding: 20px;
+       
+}
+
+.Education,.skills{
+    border-radius: 15px;
+    background-color: rgba(255, 255, 0, 0.677);
+}
+
+.edu_para{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.part2{
+    text-align: center;
+    margin-top: 180px;
+}
+
+.feature{
+    gap: 30px;
+}
+
+
+
+/*About Me*/
+.about-me-section {
+            
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    background-color:yellow;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.column {
+    text-align: left;
+    position: relative;
+}
+
+.icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 40px;
+    margin: 10px;
+}
+
+.column h2 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    margin-top: 8px;
+    
+}
+
+.column p {
+    font-size: 1em;
+    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.text-body-secondary{
+    margin-left: 150px;
+}
